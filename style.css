@@ -1,0 +1,267 @@
+/* HOMEPAGE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text button {
+    background-color: rgb(255, 102, 0);
+    border: none;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    /* margin-top: 10px; */
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: rgb(255, 98, 0);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1cap .9px 5px rgb(121, 130, 133);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service-card i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* TESTIMONIALS */
+.testimonial-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.testimonial-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+}
+
+.testimonial-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-name .company {
+    font-size: 14px;
+    color: #777;
+    font-weight: normal;
+}
+
+.testimonial-text {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    margin-left: 20px;
+}
+
+.testimonial-text p {
+    font-style: italic;
+}
+
+.next-arrow {
+    font-size: 24px;
+    color: #ff5722;
+    cursor: pointer;
+}
+
+.next-arrow span {
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+.next-arrow span:hover {
+    transform: translateX(5px);
+}
+
+/* FOOTER */
+.cta-section {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #ff5722;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffe6de;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-logo 
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff5722;
+    width: 25px ;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.column {
+    margin: 0 20px;
+}
+
+.column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column ul li {
+    margin-bottom: 8px;
+}
+
+.column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.column ul li a:hover {
+    color: #ff5722;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
