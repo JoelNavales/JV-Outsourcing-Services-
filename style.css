@@ -18,18 +18,33 @@ header nav a {
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+header nav a:hover{
+    color: #ff3c00;
+    text-decoration: underline;
+}
+
+header img{
+    width: 90px;
+}
+header .logo{
+    margin-right: 50%;
+    cursor: pointer;
+}
 .hero {
     position: relative;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 
 .hero img {
     width: 100%;
     height: 500px;
     filter: brightness(50%);
+    cursor: pointer;
 }
 
 .hero-text {
@@ -37,6 +52,7 @@ header nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .hero-text h1 {
@@ -217,17 +233,23 @@ footer {
 }
 
 .footer-logo 
-.logo {
+.Logo {
     font-size: 36px;
     font-weight: bold;
     color: #ff5722;
-    width: 25px ;
+    width: 250px ;
+    cursor: pointer;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
     flex: 1;
+    cursor: pointer;
+}
+
+.footer-logo .stroke{
+    background-color: #ff5722;
 }
 
 .column {
@@ -264,4 +286,90 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #777;
+}
+
+/* ABOUT US */
+
+.about img{
+    width: 500px;
+    margin-top: 0px;
+    margin-left: 1000px;
+}
+
+.about h1{
+    margin-left: 250px;
+    margin-top: -350px;
+    align-items: top;
+    color: #ff5722;
+}
+
+.p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 250px;
+}
+.JV img{
+    margin-left: 250px;
+}
+
+.JV .text{
+    margin-left: 50%;
+    margin-top: 90px;
+}
+
+.JV p{
+    margin: 10px;
+    justify-content: center;
+}
+
+.vmcc{
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+    height: 50px;
+}
+
+.objectives ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.ceo-section{
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    height: 450px;
+}
+
+.ceo-section h3{
+    margin-left: 250px;
+    font-size: 50px;
+}
+
+.ceo-section p{
+    margin-left: 250px ;
+}
+.team-section{
+    background-color: #ffffff;
+    color: white;
+    padding: 40px 20px;
+    height: 450px;
+}
+
+.team-section h3{
+    margin-top: -10px;
+    font-size: 50px;
+}
+
+.team-profile{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
 }
