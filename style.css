@@ -1,7 +1,19 @@
+/* FONTS */
+@font-face {
+    font-family: Inter;
+    src: url(Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: SSans3;
+    src: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+}
+
+/* END FONTS */
+
 /* HOMEPAGE */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 header {
@@ -11,40 +23,74 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
+}
+
+header nav {
+    margin-right: 2vw;
 }
 
 header nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 20px;
+    font-family: Inter;
     font-weight: bold;
-    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
 }
 
-header nav a:hover{
-    color: #ff3c00;
+nav .gstarted {
     text-decoration: underline;
+    text-decoration-color: transparent;
 }
 
-header img{
-    width: 90px;
+header a:hover {
+    color: #ff5500;
 }
-header .logo{
-    margin-right: 50%;
-    cursor: pointer;
+
+nav .gstarted:hover {
+    text-decoration-color: #ff5500;
 }
+
+.column ul li a {
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+
+    text-decoration: none;
+}
+
+.logo1 img {
+    top: 0.7vw;
+    margin-left: 2vw;
+    height: 4.2vw;
+    width: 4.2vw;
+    position: absolute;
+}
+
+.logo1 p{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-left: 8vw;
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s;
+}
+
 .hero {
     position: relative;
     text-align: center;
     color: white;
-    cursor: pointer;
+    height: 90vh;
 }
 
 .hero img {
     width: 100%;
-    height: 500px;
+    height: 90vh;
     filter: brightness(50%);
-    cursor: pointer;
 }
 
 .hero-text {
@@ -52,53 +98,57 @@ header .logo{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
+    font-family: SSans3;
 }
 
 .hero-text button {
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(255, 85, 0);
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     color: rgb(0, 0, 0);
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 50px;
+    border-radius: 20px;
+    font-family: Inter;
+    font-weight: 700;
 }
+
+/* SERVICES */
 
 .services {
     text-align: center;
-    padding: 50px 20px;
-    /* margin-top: 10px; */
+    padding: 30px 20px;
 }
 
 .services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+    font-family: SSans3;
 }
 
 .service-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
 }
 
 .service-card {
-    background-color: rgb(255, 98, 0);
+    background-color: rgb(255, 85, 0);
     color: white;
     padding: 20px;
     width: 300px;
     border-radius: 10px;
     box-shadow: 1cap .9px 5px rgb(121, 130, 133);
+    font-family: Inter;
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -115,9 +165,16 @@ header .logo{
 
 /* TESTIMONIALS */
 .testimonial-container {
-    width: 80%;
-    margin: 50px auto;
+    width: 70%;
+    margin: 100px auto;
     text-align: center;
+}
+
+.testimonial-container h2 {
+    margin-right:  60%;
+    font-family: SSans3;
+    font-size: 3.2rem;
+    font-weight: bold;
 }
 
 .testimonial {
@@ -128,6 +185,7 @@ header .logo{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
+    font-family: Inter;
 }
 
 .testimonial-image {
@@ -139,8 +197,8 @@ header .logo{
 }
 
 .testimonial-image img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -160,17 +218,18 @@ header .logo{
 .testimonial-text {
     flex: 1;
     text-align: left;
-    font-size: 16px;
     color: #555;
     margin-left: 20px;
+    margin-right: 50px;
 }
 
 .testimonial-text p {
     font-style: italic;
+    font-size: 1.2rem;
 }
 
 .next-arrow {
-    font-size: 24px;
+    font-size: 3rem;
     color: #ff5722;
     cursor: pointer;
 }
@@ -187,26 +246,30 @@ header .logo{
 
 /* FOOTER */
 .cta-section {
-    background-color: #ff5722;
+    background-color: #ff5500;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
+    font-weight: bold;
 }
 
 .cta-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin: 0 0 20px;
+    font-family: SSans3;
 }
 
 .cta-button {
     background-color: white;
     color: #ff5722;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: Inter;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -216,49 +279,57 @@ header .logo{
 footer {
     background-color: #000;
     color: white;
-    padding: 40px 20px;
+    height: 35vh;
+    width: 100%;
+    position: relative;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 0 auto;
+    font-family: Inter;
 }
 
 .footer-logo {
-    text-align: left;
-    margin-bottom: 20px;
+    display: flex;
+    width: 30vw;
+    height: 35vh;
+    border-right: 3px solid #ff5500;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-logo 
-.Logo {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ff5722;
-    width: 250px ;
-    cursor: pointer;
+.Logo2 {
+    width: 10vw ;
+    height: 10vw;
+    margin-top: 3vh;
 }
+
+.footer-logo p {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1vh;
+}
+
 
 .footer-links {
     display: flex;
     justify-content: space-between;
     flex: 1;
-    cursor: pointer;
-}
-
-.footer-logo .stroke{
-    background-color: #ff5722;
 }
 
 .column {
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 .column h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-top: 5vh;
 }
 
 .column ul {
@@ -268,11 +339,21 @@ footer {
 }
 
 .column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.column ul li .icon {
+    width: 2rem;
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
 }
 
 .column ul li a {
     color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -282,94 +363,214 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
+    position: absolute;
+    right: 2vw;
+    bottom: 1vh;
+    font-size: 1rem;
     color: #777;
+    margin: 0;
 }
+
+
+
+
+
+
+
+
 
 /* ABOUT US */
 
-.about img{
-    width: 500px;
+.about {
+    font-family: SSans3;
+}
+
+.abt {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 5vw 2vw 10vw;
+}
+
+.abt img{
+    display: block;
+    width: 40vw;
     margin-top: 0px;
-    margin-left: 1000px;
+    margin-left: 3vw;
 }
 
-.about h1{
-    margin-left: 250px;
-    margin-top: -350px;
-    align-items: top;
-    color: #ff5722;
+.abt h1{
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 4rem;
+    border-bottom: 5px solid #000;
 }
 
-.p{
+.abt .p {
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-left: 250px;
+    font-size: 2.5rem;
 }
+
+.abt .p p {
+    margin-bottom: 10px;
+}
+
+.abt .p .subtext {
+    color: rgb(255, 124, 58);
+    font-size: 1.2rem;
+}
+
+.JV {
+    display: flex;
+    padding: 0vw 10vw 0vw 10vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .JV img{
-    margin-left: 250px;
+    display: block;
+    width: 40vw;
+    margin-top: 0px;
+    margin-right: 5vw;
 }
 
-.JV .text{
-    margin-left: 50%;
-    margin-top: 90px;
+.JV .text h1 {
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 2.8rem;    
+    margin: 0;
 }
 
-.JV p{
-    margin: 10px;
-    justify-content: center;
+.JV .text p {
+    font-family: Inter;
+    font-size: 1.4rem;
+    margin: 0 0 1.5rem;
 }
 
 .vmcc{
-    background-color: #ff5722;
+    background-color: #ff5500;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 100px;
-    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10vw 0 10vw;
+
+    font-weight: 700;
+    font-size: 2.8rem;
 }
 
-.objectives ul li{
-    list-style: none;
+.vmcc .company-vmcc {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    flex-direction: column;
+
+    width: 25%;
+}
+
+.vmcc img {
+    width: 15vw;
+}
+
+.vmcc p {
     text-align: center;
-    display: inline-block;
-    font-size: 50px;
-    justify-content: space-between;
-    margin-top: -20px;
+    margin-top: 0;
+    margin-bottom: 1vw;
 }
 
 .ceo-section{
     background-color: #000000;
     color: white;
-    padding: 40px 20px;
-    height: 450px;
+    padding: 5vw 5vw 0 10vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.ceo-section h3{
-    margin-left: 250px;
-    font-size: 50px;
+.ceo-text {
+    width: 55%;
 }
 
-.ceo-section p{
-    margin-left: 250px ;
+.ceo-text h3{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
 }
+
+.ceo-text p{
+    font-family: Inter;
+    font-size: 1.5rem;
+    width: 85%;
+    margin: 0;
+}
+
+.ceo-img {
+    width: 45%;
+    position: relative;
+}
+
+.ceo-img img {
+    position: absolute;
+    width: 30vw;
+    right: 0;
+    bottom: 1vw;
+}
+
 .team-section{
     background-color: #ffffff;
-    color: white;
-    padding: 40px 20px;
-    height: 450px;
+    padding: 0 10vw 0 10vw;
 }
 
 .team-section h3{
-    margin-top: -10px;
-    font-size: 50px;
+    margin-top: 5vh;
+    font-size: 4rem;
 }
 
-.team-profile{
+.team-profile {
     display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
+    width: 50%;
+    margin-bottom: 5vw;
+}
+
+.team-section .team-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.team-profile .person-img {
+    width: 15vw;
+    border-radius: 50%;
+    margin-right: 3vw;
+}
+
+.person-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-details p {
+    margin: 0;
+}
+
+.person-details .team-name {
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.person-details .team-position {
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.person-details .team-desc {
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
 }
