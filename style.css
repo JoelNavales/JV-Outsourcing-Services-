@@ -846,3 +846,97 @@ footer {
 .form-container input::placeholder, .form-container textarea::placeholder {
     color: #ccc;
 }
+
+/* CONTACT FORM */
+
+.container {
+    display: flex;
+    background-color: #ff6600;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 250px;
+    align-items: center;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    font-family: SSans3;
+}
+
+.form-section {
+    margin-right: 20px;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section input, .form-section textarea, .form-section button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.form-section input, .form-section textarea {
+    background-color: #fff;
+    color: #333;
+}
+
+.form-section button {
+    background-color: #fff;
+    color: #ff6600;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-section button:hover {
+    background-color: #ff9933;
+    color: #fff;
+}
+
+.contact-section {
+    font-family: SSans3;
+    display: flex;
+    margin-left: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.contact-box {
+    background-color: #ff6600;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
