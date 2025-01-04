@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>JV Outsourcing Services</title>
 </head>
-<body>
+<body onload="sleepnav()">
     <header>
         <a href="index.html"><div class="logo1"><img src="./Used Images/Logo.png"><p>JV Outsourcing Services</p></div></a>
         <nav>
@@ -69,24 +69,40 @@
             </div>
         </div>
 
-        <div class="vmcc">
-            <div class="company-vmcc">
-                <img src="./Used Images/Vision.png" alt="Vision">
-                <p>Vision</p>
+        <div class="parent-vmcc">
+            <div class="vmcc">
+                <button type="button" class="company-vmcc">
+                    <img src="./Used Images/Vision.png" alt="Vision">
+                    <p>Vision</p>
+                </button>
+                <button type="button" class="company-vmcc">
+                    <img src="./Used Images/Mission.png" alt="Mission">
+                    <p>Mission</p>
+                </button>
+                <button type="button" class="company-vmcc">
+                    <img src="./Used Images/Corevalues.png" alt="Core Values">
+                    <p>Core Values</p>
+                </button>
+                <button type="button" class="company-vmcc">
+                    <img src="./Used Images/CSR.png" alt="CSR">
+                    <p>CSR</p>
+                </button>
+            </div>  
+            <div class="content">
+                <p>Our vision at JV Outsourcing Services is to become the premier provider of outsourcing solutions for businesses, recognized for our expertise, exceptional service, and unwavering commitment to excellence. We strive to stay ahead by embracing emerging technologies, enhancing efficiency, and delivering innovative solutions that cater to the dynamic needs of our clients. By empowering businesses with reliable and tailored services, we aim to contribute to their growth and success, building lasting partnerships founded on trust and dependability.</p>
             </div>
-            <div class="company-vmcc">
-                <img src="./Used Images/Mission.png" alt="Mission">
-                <p>Mission</p>
+            <div class="content">
+                <p>At JV Outsourcing Services, our mission is to deliver reliable and tailored outsourcing solutions that help businesses streamline their operations and make informed decisions. We are committed to maintaining the highest standards of professionalism, integrity, and client satisfaction in everything we do. Our goal is to be a trusted partner, simplifying complex processes so our clients can focus on their core operations and achieve their business objectives.</p>
             </div>
-            <div class="company-vmcc">
-                <img src="./Used Images/Corevalues.png" alt="Core Values">
-                <p>Core Values</p>
+            <div class="content">
+                <p>At JV Outsourcing Services, our core values are rooted in serving our community with unwavering commitment and dedication. We are guided by a strong sense of purpose and integrity, striving to create positive impacts through our services. With faith as our foundation, we aim to bless and uplift others by delivering exceptional support, fostering trust, and building meaningful relationships. Our mission is to empower businesses and individuals alike, contributing to their growth and success while upholding the values of compassion, excellence, and reliability.</p>
             </div>
-            <div class="company-vmcc">
-                <img src="./Used Images/CSR.png" alt="CSR">
-                <p>CSR</p>
+            <div class="content">
+                <p>At JV Outsourcing Services, our commitment to Corporate Social Responsibility is grounded in serving our community with dedication, integrity, and compassion. Guided by faith, we strive to make a positive difference by blessing and uplifting others through meaningful actions and impactful initiatives. We are dedicated to supporting local communities, fostering sustainable growth, and helping those in need. By aligning our efforts with our core values, we aim to create lasting change, promote inclusivity, and contribute to a better future for everyone we serve.</p>
             </div>
+            
         </div>
+
 
         <div class="ceo-section">
             <div class="ceo-text">
@@ -188,4 +204,86 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
+    <script>
+        function sleepnav() {
+            const dropdown = document.getElementsByClassName("dropdown-content");
+            dropdown[0].style.animationPlayState = "running";
+        }
+
+        var coll = document.getElementsByClassName("company-vmcc");
+        var i;
+        var content = document.getElementsByClassName("content");
+
+        coll[0].addEventListener("click", function() {
+                if (content[0].style.maxHeight) {
+                    content[0].style.maxHeight = null;
+                    coll[0].classList.remove("active");
+                } else {
+                    if (content[1].style.maxHeight || content[2].style.maxHeight || content[3].style.maxHeight) {
+                        content[1].style.maxHeight = null;
+                        coll[1].classList.remove("active");
+                        content[2].style.maxHeight = null;
+                        coll[2].classList.remove("active");
+                        content[3].style.maxHeight = null;
+                        coll[3].classList.remove("active");
+                    }
+                    content[0].style.maxHeight = content[0].scrollHeight + "px";
+                    coll[0].classList.add("active");
+                }
+            });
+            
+            coll[1].addEventListener("click", function() {
+                if (content[1].style.maxHeight) {
+                    content[1].style.maxHeight = null;
+                    coll[1].classList.remove("active");
+                } else {
+                    if (content[0].style.maxHeight || content[2].style.maxHeight || content[3].style.maxHeight) {
+                        content[0].style.maxHeight = null;
+                        coll[0].classList.remove("active");
+                        content[2].style.maxHeight = null;
+                        coll[2].classList.remove("active");
+                        content[3].style.maxHeight = null;
+                        coll[3].classList.remove("active");
+                    }
+                    content[1].style.maxHeight = content[1].scrollHeight + "px";
+                    coll[1].classList.add("active");
+                }
+            }); 
+            
+            coll[2].addEventListener("click", function() {
+                if (content[2].style.maxHeight) {
+                    content[2].style.maxHeight = null;
+                    coll[2].classList.remove("active");
+                } else {
+                    if (content[1].style.maxHeight || content[0].style.maxHeight || content[3].style.maxHeight) {
+                        content[1].style.maxHeight = null;
+                        coll[1].classList.remove("active");
+                        content[0].style.maxHeight = null;
+                        coll[0].classList.remove("active");
+                        content[3].style.maxHeight = null;
+                        coll[3].classList.remove("active");
+                    }
+                    content[2].style.maxHeight = content[2].scrollHeight + "px";
+                    coll[2].classList.add("active");
+                }
+            });
+
+            coll[3].addEventListener("click", function() {
+                if (content[3].style.maxHeight) {
+                    content[3].style.maxHeight = null;
+                    coll[3].classList.remove("active");
+                } else {
+                    if (content[1].style.maxHeight || content[2].style.maxHeight || content[0].style.maxHeight) {
+                        content[1].style.maxHeight = null;
+                        coll[1].classList.remove("active");
+                        content[2].style.maxHeight = null;
+                        coll[2].classList.remove("active");
+                        content[0].style.maxHeight = null;
+                        coll[0].classList.remove("active");
+                    }
+                    content[3].style.maxHeight = content[3].scrollHeight + "px";
+                    coll[3].classList.add("active");
+                }
+            });
+    </script>
 </body>

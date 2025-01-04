@@ -10,14 +10,11 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>JV Outsourcing Services</title>
 </head>
-<body>
+<body onload="sleepnav()">
     <header>
         <a href="index.html"><div class="logo1"><img src="./Used Images/Logo.png"><p>JV Outsourcing Services</p></div></a>
         <nav>
-            
             <a href="about.html">About Us</a>
-
-
             <div class="dropdown">
                 <a class="dropa" href="services.html">Services &#x2198;</a>
                 <div class="dropdown-content">
@@ -30,14 +27,52 @@
             <a class="gstarted" href="Get-Started.html" style="color: rgb(255, 85, 0);">Get Started</a>
         </nav>
     </header>
+    <div class="contact">
+        <div class="cont">
+                <div class="p"> 
+                    <h1>Contact</h1>
+                    <p>Get in touch to start your<br>
+                        journey</p>
+                    <p class="subtext">Our team is here to support and guide<br>
+                        you every step of the way</p>
+                </div>
 
-    <div class="hero">
-        <img src="./Used Images/HomepageBG.jpg" alt="Hero Image">
-        <div class="hero-text">
-            <h1>Streamline success with Bookkeeping and HR expertise.</h1>
-            <button>Get Started</button>
+            <div class="heroimg">
+                <img src="./Used Images/Contact.png" alt="Contact">
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Got any Concerns?</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone number (Optional)">
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-section">
+            <div class="contact-box">
+                <h3>Give us a call</h3>
+                <a class="link1" href="tel:0551770918"><img src="Used Images/PhoneC.png" class="icon1">0551-770-0918</a>
+            </div>
+            <div class="contact-box">
+                <h3>Chat with us</h3>
+                <p>or email us your concerns</p>
+                <a class="link2" href="https://www.facebook.com/profile.php?id=61570055225817"><img src="Used Images/FacebookC.png" class="icon2">JV Outsourcing Services</a><br>
+                <a href="mailto:jvoutsourcingservices@gmail.com"><img src="Used Images/EmailC.png" class="icon2">jvoutsourcingservices@gmail.com</a>
+            </div>
+            <div class="contact-box">
+                <h3>Visit us</h3>
+                <a class="link1" href="https://maps.app.goo.gl/CUxmqwLUe48LHgYY9"><img src="Used Images/Location.png" class="icon1">Francisco Llamas Street, Punta Princesa, Cebu City, Philippines, 6000</a>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <div class="footer-container">
@@ -73,5 +108,11 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
+    <script>
+        function sleepnav() {
+            const dropdown = document.getElementsByClassName("dropdown-content");
+            dropdown[0].style.animationPlayState = "running";
+        }
+    </script>
 </body>
 </html>

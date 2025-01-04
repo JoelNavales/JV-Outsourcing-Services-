@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>JV Outsourcing Services</title>
 </head>
-<body>
+<body onload="sleepnav()">
     <header>
         <a href="index.html"><div class="logo1"><img src="./Used Images/Logo.png"><p>JV Outsourcing Services</p></div></a>
         <nav>
@@ -118,5 +118,11 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
+    <script>
+        function sleepnav() {
+            const dropdown = document.getElementsByClassName("dropdown-content");
+            dropdown[0].style.animationPlayState = "running";
+        }
+    </script>
 </body>
 </html>
