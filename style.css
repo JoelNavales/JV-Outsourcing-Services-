@@ -1114,3 +1114,265 @@ footer {
 .contact-box a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+/* SERVICES-BOOKKEEPING */
+
+.services-bookkeeping {
+    font-family: SSans3;
+}
+
+.serv-book {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 5vw 0vw 10vw;
+}
+
+.serv-book img{
+    display: block;
+    width: 40vw;
+    margin-top: 0px;
+    margin-left: 3vw;
+}
+
+.serv-book h1{
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 4rem;
+    border-bottom: 5px solid #000;
+}
+
+.serv-book .p {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.serv-book .p p {
+    margin-bottom: 10px;
+}
+
+.serv-book .p .subtext {
+    color: rgb(255, 124, 58);
+    font-size: 1.2rem;
+}
+
+.mid-logo {
+    height: 8vw;
+    position: relative;
+}
+
+.mid-logo .mid-logo-orange{
+    height: 2vw;
+    background-color: #ff5500;
+    position: absolute;
+    bottom: 3.5vw;
+    width: 100%;
+}
+
+.mid-logo img {
+    position: absolute;
+    width: 8vw;    
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    border-radius: 50% 50% 25px 25px;
+}
+
+.mid-logo .mid-logo-black {
+    height: 3.5vw;
+    background-color: #000;
+    position: absolute;
+    bottom: 0vw;
+    width: 100%;
+}
+
+.services-title-ribbon {
+    background-color: #000;
+}
+
+.services-title-ribbon h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-family: SSans3;    
+}
+
+.services-bookkeeping-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10vw 2vh 10vw;
+}
+
+.services-bookkeeping-info .services-bookkeeping-info-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.services-bookkeeping-info .services-bookkeeping-info-upper img {
+    width: 40vw;
+    margin-right: 3vw;
+}
+
+.services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
+    font-family: Inter;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SERVICES-HUMAN RESOURCE CONSULTANCY */
+
+.services-hrc {
+    font-family: SSans3;
+}
+
+.serv-hrc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 5vw 0vw 10vw;
+}
+
+.serv-hrc img{
+    display: block;
+    width: 35vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.serv-hrc h1{
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 4rem;
+    border-bottom: 5px solid #000;
+}
+
+.serv-hrc .p {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.serv-hrc .p p {
+    margin-bottom: 10px;
+}
+
+.serv-hrc .p .subtext {
+    color: rgb(255, 124, 58);
+    font-size: 1.2rem;
+}
+
+.mid-logo {
+    height: 8vw;
+    position: relative;
+}
+
+.services-HRC-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10vw 2vh 10vw;
+}
+
+.services-HRC-info .services-HRC-info-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.services-HRC-info .services-HRC-info-upper img {
+    width: 40vw;
+    margin-right: 3vw;
+}
+
+.services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
+    font-family: Inter;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* SERVICES-OTHER SERVICES */
+
+.services-os {
+    font-family: SSans3;
+}
+
+.serv-os {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 5vw 0vw 10vw;
+}
+
+.serv-os img{
+    display: block;
+    width: 40vw;
+    margin-top: 0px;
+    margin-left: 3vw;
+}
+
+.serv-os h1{
+    color: #ff5500;
+    font-weight: 700;
+    font-size: 4rem;
+    border-bottom: 5px solid #000;
+}
+
+.serv-os .p {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.serv-os .p p {
+    margin-bottom: 10px;
+}
+
+.serv-os .p .subtext {
+    color: rgb(255, 124, 58);
+    font-size: 1.2rem;
+}
+
+.services-OS-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10vw 2vh 10vw;
+}
+
+.services-OS-info .services-OS-info-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.services-OS-info .services-OS-info-upper img {
+    width: 40vw;
+    margin-right: 3vw;
+}
+
+.services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
+    font-family: Inter;
+    font-size: 1.5rem;
+    text-align: justify;
+}
