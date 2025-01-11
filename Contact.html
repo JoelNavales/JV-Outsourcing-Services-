@@ -26,7 +26,29 @@
             <a href="Contact.html">Contact</a>
             <a class="gstarted" href="Get-Started.html" style="color: rgb(255, 85, 0);">Get Started</a>
         </nav>
+
+        <button class="nav-burger">
+            <img class="nav-burger-icon" src="./Used Images/hamburger.png" alt="burger">
+        </button>
+
     </header>
+    <div class="nav-mobile">
+        <nav class="nav-mobile-nav">
+            <a href="about.html">About Us</a>
+            <div class="nav-mobile-dropdown">
+                <a class="" href="services.html">Services &#x2198;</a>
+                <div class="nav-mobile-dropdown-services">
+                  <a href="./Services/Bookkeeping.html">Bookkeeping</a>
+                  <a href="./Services/Human-Resource-Consultancy.html">Human Resource Consultancy</a>
+                  <a href="./Services/Other-Services.html">Other Services</a>
+                </div>
+              </div> 
+            <a href="Contact.html">Contact</a><br>
+            <a class="gstarted" href="Get-Started.html" style="color: #000000;">Get Started</a>
+        </nav>
+    </div>
+
+
     <div class="contact">
         <div class="cont">
                 <div class="p"> 
@@ -113,6 +135,19 @@
             const dropdown = document.getElementsByClassName("dropdown-content");
             dropdown[0].style.animationPlayState = "running";
         }
+
+        var navmobilejs = document.getElementsByClassName("nav-burger");
+        var navmobilejscontent = document.getElementsByClassName("nav-mobile-nav");
+
+        navmobilejs[0].addEventListener("click", function() {
+                if (navmobilejscontent[0].style.maxHeight) {
+                    navmobilejscontent[0].style.maxHeight = null;
+                    navmobilejscontent[0].style.padding = "0px";
+                } else {
+                    navmobilejscontent[0].style.maxHeight = navmobilejscontent[0].scrollHeight + "px";
+                    navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
+                }
+            });
     </script>
 </body>
 </html>

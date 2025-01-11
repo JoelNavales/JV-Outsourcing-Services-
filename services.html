@@ -29,7 +29,27 @@
             <a href="Contact.html">Contact</a>
             <a class="gstarted" href="Get-Started.html" style="color: rgb(255, 85, 0);">Get Started</a>
         </nav>
+
+        <button class="nav-burger">
+            <img class="nav-burger-icon" src="./Used Images/hamburger.png" alt="burger">
+        </button>
+
     </header>
+    <div class="nav-mobile">
+        <nav class="nav-mobile-nav">
+            <a href="about.html">About Us</a>
+            <div class="nav-mobile-dropdown">
+                <a class="" href="services.html">Services &#x2198;</a>
+                <div class="nav-mobile-dropdown-services">
+                  <a href="./Services/Bookkeeping.html">Bookkeeping</a>
+                  <a href="./Services/Human-Resource-Consultancy.html">Human Resource Consultancy</a>
+                  <a href="./Services/Other-Services.html">Other Services</a>
+                </div>
+              </div> 
+            <a href="Contact.html">Contact</a><br>
+            <a class="gstarted" href="Get-Started.html" style="color: #000000;">Get Started</a>
+        </nav>
+    </div>
 
 
     <div class="service">
@@ -59,7 +79,7 @@
             <div class="offered-service-desc">
                 <h2>Bookkeeping</h2>
                 <p>Our bookkeeping services provide comprehensive solutions designed to meet the unique financial needs of your business. With our expertise, we ensure accurate record-keeping, streamlined processes, and full compliance with regulatory standards, giving you the confidence and peace of mind to focus on growing your business.</p>
-                <a href="./Services/Bookkeeping.html">Learn more &#8594;</a>
+                <p><a href="./Services/Bookkeeping.html">Learn more &#8594;</a></p>
             </div>
         </div>
         <div class="offered-service">
@@ -67,7 +87,7 @@
             <div class="offered-service-desc">
                 <h2>Human Resource Consultancy</h2>
                 <p>Our HR Consultancy services deliver specialized support to help businesses create efficient and productive workplaces. From optimizing organizational processes to ensuring compliance with labor regulations, we offer tailored human resources strategies designed to foster growth, enhance employee satisfaction, and achieve long-term business success.</p>
-                <a href="./Services/Human-Resource-Consultancy.html">Learn more &#8594;</a>
+                <p><a href="./Services/Human-Resource-Consultancy.html">Learn more &#8594;</a></p>
             </div>
         </div>
         <div class="offered-service">
@@ -75,7 +95,7 @@
             <div class="offered-service-desc">
                 <h2>Other Services</h2>
                 <p>Our additional services are designed to address your administrative needs with precision and efficiency. We specialize in ensuring accurate documentation, prompt processing, and smooth resolution of record-related matters. By offering reliable and hassle-free support, we help you save time and maintain peace of mind, allowing you to focus on your core priorities.</p>
-                <a href="./Services/Other-Services.html">Learn more &#8594;</a>
+                <p><a href="./Services/Other-Services.html">Learn more &#8594;</a></p>
             </div>
         </div>
 
@@ -124,5 +144,18 @@
             const dropdown = document.getElementsByClassName("dropdown-content");
             dropdown[0].style.animationPlayState = "running";
         }
+
+        var navmobilejs = document.getElementsByClassName("nav-burger");
+        var navmobilejscontent = document.getElementsByClassName("nav-mobile-nav");
+
+        navmobilejs[0].addEventListener("click", function() {
+                if (navmobilejscontent[0].style.maxHeight) {
+                    navmobilejscontent[0].style.maxHeight = null;
+                    navmobilejscontent[0].style.padding = "0px";
+                } else {
+                    navmobilejscontent[0].style.maxHeight = navmobilejscontent[0].scrollHeight + "px";
+                    navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
+                }
+            });
     </script>
 </body>
