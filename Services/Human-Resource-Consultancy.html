@@ -52,10 +52,10 @@
         <div class="serv-hrc">
                 <div class="p"> 
                     <h1>Human Resource<br>Consultation</h1>
-                    <p>Empower your workforce<br>
+                    <p>Empower your workforce<br id="brdelete">
                         with expert HR consultancy</p>
                     <p class="subtext">
-                        We provide tailored solutions to help you<br>
+                        We provide tailored solutions to help you<br id="brdelete">
                         build and manage a thriving team</p>
                 </div>
 
@@ -166,5 +166,18 @@
                     navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
                 }
             });
+
+            window.onload = function(){
+                if (window.innerWidth <= 430) {
+                    const bruh = document.getElementById("brdelete");
+                    bruh.remove();
+                }
+
+                if (window.innerWidth <= 430) {
+                    const bruh = document.getElementById("brdelete");
+                    bruh.remove();
+                }
+            }
+
     </script>
 </body>

@@ -4922,7 +4922,7 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.5rem + 0.7vw);
     }
 }
 
@@ -4991,12 +4991,12 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper img {
-        width: 40vw;
+        width: 35vw;
         margin-right: 3vw;
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(0.5rem + 0.6vw);
+        font-size: calc(0.5rem + 0.5vw);
     }
 }
 
@@ -5064,12 +5064,12 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper img {
-        width: 40vw;
+        width: 38vw;
         margin-right: 3vw;
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.55rem + 0.5vw);
     }
 }
 
@@ -5142,7 +5142,7 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5215,7 +5215,7 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5288,7 +5288,7 @@ footer {
     }
     
     .services-bookkeeping-info .services-bookkeeping-info-upper-text, .services-bookkeeping-info .services-bookkeeping-info-lower {
-        font-size: calc(1rem + 1vw);
+        font-size: calc(0.8rem + 0.6vw);
     }
 }
 
@@ -5387,7 +5387,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(1rem + 2vw);
+        font-size: calc(0.8rem + 1.3vw);
         border-bottom: 3px solid #000;
         margin-bottom: 0;
     }
@@ -5421,7 +5421,7 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.5rem + 0.7vw);
     }
 }
 
@@ -5437,7 +5437,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(1.8rem + 3vw);
+        font-size: calc(1rem + 2vw);
         border-bottom: 4px solid #000;
         margin-bottom: 0;
         margin-top: 10px;
@@ -5467,12 +5467,12 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper img {
-        width: 40vw;
+        width: 35vw;
         margin-right: 3vw;
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(0.5rem + 0.6vw);
+        font-size: calc(0.5rem + 0.5vw);
     }
 }
 
@@ -5488,7 +5488,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(2rem + 3vw);
+        font-size: calc(1.3rem + 2.5vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5517,12 +5517,12 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper img {
-        width: 40vw;
+        width: 38vw;
         margin-right: 3vw;
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.55rem + 0.5vw);
     }
 }
 
@@ -5538,7 +5538,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(2.5rem + 3.2vw);
+        font-size: calc(1.8rem + 2.7vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5572,7 +5572,7 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5588,7 +5588,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(2.5rem + 3.2vw);
+        font-size: calc(1.8rem + 2.7vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5622,7 +5622,7 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5638,7 +5638,7 @@ footer {
     }
     
     .serv-hrc h1{
-        font-size: calc(3rem + 4vw);
+        font-size: calc(2.2rem + 3vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5672,7 +5672,7 @@ footer {
     }
     
     .services-HRC-info .services-HRC-info-upper-text, .services-HRC-info .services-HRC-info-lower {
-        font-size: calc(1rem + 1vw);
+        font-size: calc(0.8rem + 0.6vw);
     }
 }
 
@@ -5735,7 +5735,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(1rem + 2vw);
+        font-size: calc(0.9rem + 1.2vw);
         border-bottom: 3px solid #000;
         margin-bottom: 0;
     }
@@ -5769,7 +5769,7 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.5rem + 0.7vw);
     }
 }
 
@@ -5785,7 +5785,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(1.8rem + 3vw);
+        font-size: calc(1.2rem + 1.7vw);
         border-bottom: 4px solid #000;
         margin-bottom: 0;
         margin-top: 10px;
@@ -5815,12 +5815,12 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper img {
-        width: 40vw;
+        width: 35vw;
         margin-right: 3vw;
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(0.5rem + 0.6vw);
+        font-size: calc(0.5rem + 0.5vw);
     }
 }
 
@@ -5836,7 +5836,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(2rem + 3vw);
+        font-size: calc(1.7rem + 2.5vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5865,12 +5865,12 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper img {
-        width: 40vw;
+        width: 38vw;
         margin-right: 3vw;
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.55rem + 0.5vw);
     }
 }
 
@@ -5886,7 +5886,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(2.5rem + 3.2vw);
+        font-size: calc(2.2rem + 3vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5920,7 +5920,7 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5936,7 +5936,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(2.5rem + 3.2vw);
+        font-size: calc(2.2rem + 3vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -5970,7 +5970,7 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(0.8rem + 1vw);
+        font-size: calc(0.65rem + 0.6vw);
     }
 }
 
@@ -5986,7 +5986,7 @@ footer {
     }
     
     .serv-os h1{
-        font-size: calc(3rem + 4vw);
+        font-size: calc(2.5rem + 3.5vw);
         border-bottom: 5px solid #000;
         margin-bottom: 0;
     }
@@ -6020,7 +6020,7 @@ footer {
     }
     
     .services-OS-info .services-OS-info-upper-text, .services-OS-info .services-OS-info-lower {
-        font-size: calc(1rem + 1vw);
+        font-size: calc(0.8rem + 0.6vw);
     }
 }
 

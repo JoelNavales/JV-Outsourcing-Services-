@@ -52,10 +52,10 @@
         <div class="serv-book">
                 <div class="p"> 
                     <h1>Bookkeeping</h1>
-                    <p>Simplify your finances with<br>
+                    <p>Simplify your finances with<br id="brdelete">
                         expert bookkeeping</p>
                     <p class="subtext">
-                        Let us handle the numbers so you can<br>
+                        Let us handle the numbers so you can<br id="brdelete">
                         focus on growing your business</p>
                 </div>
 
@@ -150,5 +150,17 @@
                     navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
                 }
             });
+
+            window.onload = function(){
+                if (window.innerWidth <= 430) {
+                    const bruh = document.getElementById("brdelete");
+                    bruh.remove();
+                }
+
+                if (window.innerWidth <= 430) {
+                    const bruh = document.getElementById("brdelete");
+                    bruh.remove();
+                }
+            }
     </script>
 </body>
