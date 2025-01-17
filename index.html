@@ -8,6 +8,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript">
+        var page = "INDEX";
+    </script>
+    <script language="JavaScript" type="text/javascript" src="./scripts/webscript.js"></script>
     <title>JV Outsourcing Services</title>
 </head>
 <body onload="sleepnav()">
@@ -136,24 +140,5 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
-    <script>
-        function sleepnav() {
-            const dropdown = document.getElementsByClassName("dropdown-content");
-            dropdown[0].style.animationPlayState = "running";
-        }
-
-        var navmobilejs = document.getElementsByClassName("nav-burger");
-        var navmobilejscontent = document.getElementsByClassName("nav-mobile-nav");
-
-        navmobilejs[0].addEventListener("click", function() {
-                if (navmobilejscontent[0].style.maxHeight) {
-                    navmobilejscontent[0].style.maxHeight = null;
-                    navmobilejscontent[0].style.padding = "0px";
-                } else {
-                    navmobilejscontent[0].style.maxHeight = navmobilejscontent[0].scrollHeight + "px";
-                    navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
-                }
-            });
-    </script>
 </body>
 </html>

@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script language="JavaScript" type="text/javascript" src="scripts/jquery-3.7.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/sendmail.js"></script>
+    <script type="text/javascript">
+        var page = "GSTARTED";
+    </script>
+    <script language="JavaScript" type="text/javascript" src="./scripts/webscript.js"></script>
 </head>
 <body onload="sleepnav()">
     <header>
@@ -66,30 +72,23 @@
         </div>
     </div>
        
-    <div class="form-container">
+    <div class="form-container" id="form-container">
         <h3>Fill in your details below, and we'll follow up via email to schedule a convenient day and time to connect.</h3>
-        <form>
-            <input type="text" name="firstName" placeholder="First Name" required>
-            <input type="text" name="lastName" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="tel" name="phone" placeholder="Phone number (Optional)">
-            <select name="serviceType" required>
+        <form name="signupform" id="signupform" method="POST" action="">
+            <input type="text" placeholder="First Name" required name="FirstName" id="FirstName">
+            <input type="text" placeholder="Last Name" required name="LastName" id="LastName">
+            <input type="email" placeholder="Email Address" required name="Email" id="Email">
+            <input type="tel" placeholder="Phone Number (Optional)" name="Phone" id="Phone">
+            <select required name="serviceType" id="serviceType">
                 <option value="" disabled selected>Service Type</option>
-                <option value="consultation">Consultation</option>
-                <option value="support">Support</option>
-                <option value="other">Other</option>
+                <option value="Bookkeeping">Bookkeeping</option>
+                <option value="Human Resource Consultancy">Human Resource Consultancy</option>
+                <option value="Other Services">Other Services</option>
             </select>
-            <textarea name="additionalInfo" rows="4" placeholder="Additional Information"></textarea>
-            <input type="submit" value="Submit">
+            <textarea placeholder="Additional Information" rows="4" name="additionalInfo" id="additionalInfo"></textarea>
+            <input type="submit" id="submit" name="submit" value="Submit">
         </form>
     </div>
-
-
-
-
-
-    
-
 
     <footer>
         <div class="footer-container">
@@ -125,23 +124,4 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
-    <script>
-        function sleepnav() {
-            const dropdown = document.getElementsByClassName("dropdown-content");
-            dropdown[0].style.animationPlayState = "running";
-        }
-
-        var navmobilejs = document.getElementsByClassName("nav-burger");
-        var navmobilejscontent = document.getElementsByClassName("nav-mobile-nav");
-
-        navmobilejs[0].addEventListener("click", function() {
-                if (navmobilejscontent[0].style.maxHeight) {
-                    navmobilejscontent[0].style.maxHeight = null;
-                    navmobilejscontent[0].style.padding = "0px";
-                } else {
-                    navmobilejscontent[0].style.maxHeight = navmobilejscontent[0].scrollHeight + "px";
-                    navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
-                }
-            });
-    </script>
 </body>

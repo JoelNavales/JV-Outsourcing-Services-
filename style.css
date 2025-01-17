@@ -3544,6 +3544,10 @@ footer {
         margin-bottom: 20px;
         font-size: 0.8rem;
     }
+
+    .form-container p {
+        font-size: calc(0.6rem + 1vw);
+    }
     
     .form-container input, .form-container select, .form-container textarea {
         width: calc(100% - 20px);
@@ -3608,6 +3612,10 @@ footer {
         margin-bottom: 20px;
         font-size: 1rem;
     }
+
+    .form-container p {
+        font-size: calc(0.6rem + 1vw);
+    }
     
     .form-container input, .form-container select, .form-container textarea {
         width: calc(100% - 20px);
@@ -3670,6 +3678,10 @@ footer {
     .form-container h3 {
         margin-bottom: 20px;
         font-size: 1.5rem;
+    }
+
+    .form-container p {
+        font-size: calc(0.75rem + 1vw);
     }
     
     .form-container input, .form-container select, .form-container textarea {
@@ -3734,6 +3746,10 @@ footer {
         margin-bottom: 20px;
         font-size: 1.5rem;
     }
+
+    .form-container p {
+        font-size: calc(0.75rem + 1vw);
+    }
     
     .form-container input, .form-container select, .form-container textarea {
         width: calc(100% - 20px);
@@ -3796,6 +3812,10 @@ footer {
     .form-container h3 {
         margin-bottom: 20px;
         font-size: 1.5rem;
+    }
+
+    .form-container p {
+        font-size: calc(0.75rem + 1vw);
     }
     
     .form-container input, .form-container select, .form-container textarea {
@@ -3860,6 +3880,10 @@ footer {
         margin-bottom: 20px;
         font-size: 1.5rem;
     }
+
+    .form-container p {
+        font-size: 1rem;
+    }
     
     .form-container input, .form-container select, .form-container textarea {
         width: calc(100% - 20px);
@@ -3915,12 +3939,21 @@ footer {
     font-family: SSans3;
 }
 
+.form-container p {
+    color: white;
+    font-family: SSans3;
+}
+
 .form-container select {
     width: 100% !important;
 }
 
 .form-container input, .form-container select, .form-container textarea {
     font-family: Inter;
+}
+
+.form-container textarea {
+    resize: none;
 }
 
 .form-container input[type="submit"] {
@@ -4045,6 +4078,10 @@ footer {
         font-size: calc(0.7rem + 1.5vw);
         margin-bottom: 15px;
         margin-top: 10px;
+    }
+
+    .form-section p {
+        font-size: calc(0.6rem + 1vw);
     }
     
     .form-section form {
@@ -4175,6 +4212,10 @@ footer {
         margin-bottom: 15px;
         margin-top: 10px;
     }
+
+    .form-section p {
+        font-size: calc(0.6rem + 1vw);
+    }
     
     .form-section form {
         display: flex;
@@ -4201,6 +4242,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 45vw;
+        gap: 0.7vh;
     }
     
     .contact-box {
@@ -4302,6 +4344,10 @@ footer {
         margin-bottom: 15px;
         margin-top: 10px;
     }
+
+    .form-section p {
+        font-size: calc(0.75rem + 1vw);
+    }
     
     .form-section form {
         display: flex;
@@ -4328,6 +4374,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 45vw;
+        gap: 1vh;
     }
     
     .contact-box {
@@ -4429,6 +4476,10 @@ footer {
         margin-bottom: 15px;
         margin-top: 10px;
     }
+
+    .form-section p {
+        font-size: calc(0.75rem + 1vw);
+    }
     
     .form-section form {
         display: flex;
@@ -4455,6 +4506,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 40vw;
+        gap: 1vh;
     }
     
     .contact-box {
@@ -4557,6 +4609,10 @@ footer {
         margin-top: 10px;
     }
     
+    .form-section p {
+        font-size: calc(0.75rem + 1vw);
+    }
+    
     .form-section form {
         display: flex;
         flex-direction: column;
@@ -4582,6 +4638,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 40vw;
+        gap: 1vh;
     }
     
     .contact-box {
@@ -4683,6 +4740,10 @@ footer {
         margin-bottom: 15px;
         margin-top: 10px;
     }
+
+    .form-section p {
+        font-size: 1rem;
+    }
     
     .form-section form {
         display: flex;
@@ -4709,6 +4770,7 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         width: 40vw;
+        gap: 1.5vh;
     }
     
     .contact-box {

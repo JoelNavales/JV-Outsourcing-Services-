@@ -8,16 +8,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript">
+        var page = "ABOUT";
+    </script>
+    <script language="JavaScript" type="text/javascript" src="./scripts/webscript.js"></script>
     <title>JV Outsourcing Services</title>
 </head>
 <body onload="sleepnav()">
     <header>
         <a href="index.html"><div class="logo1"><img src="./Used Images/Logo.png"><p>JV Outsourcing Services</p></div></a>
         <nav>
-            
             <a href="about.html">About Us</a>
-
-
             <div class="dropdown">
                 <a class="dropa" href="services.html">Services &#x2198;</a>
                 <div class="dropdown-content">
@@ -123,7 +124,6 @@
             
         </div>
 
-
         <div class="ceo-section">
             <div class="ceo-text">
                 <h3 style="color: rgb(255, 85, 00);">About Our Founder</h3>
@@ -224,98 +224,4 @@
             <p class="footer-bottom">&copy; 2024 JV Outsourcing Services</p>
         </div>
     </footer>
-    <script>
-        function sleepnav() {
-            const dropdown = document.getElementsByClassName("dropdown-content");
-            dropdown[0].style.animationPlayState = "running";
-        }
-
-        var coll = document.getElementsByClassName("company-vmcc");
-        var content = document.getElementsByClassName("content");
-
-        coll[0].addEventListener("click", function() {
-                if (content[0].style.maxHeight) {
-                    content[0].style.maxHeight = null;
-                    coll[0].classList.remove("active");
-                } else {
-                    if (content[1].style.maxHeight || content[2].style.maxHeight || content[3].style.maxHeight) {
-                        content[1].style.maxHeight = null;
-                        coll[1].classList.remove("active");
-                        content[2].style.maxHeight = null;
-                        coll[2].classList.remove("active");
-                        content[3].style.maxHeight = null;
-                        coll[3].classList.remove("active");
-                    }
-                    content[0].style.maxHeight = content[0].scrollHeight + "px";
-                    coll[0].classList.add("active");
-                }
-            });
-            
-            coll[1].addEventListener("click", function() {
-                if (content[1].style.maxHeight) {
-                    content[1].style.maxHeight = null;
-                    coll[1].classList.remove("active");
-                } else {
-                    if (content[0].style.maxHeight || content[2].style.maxHeight || content[3].style.maxHeight) {
-                        content[0].style.maxHeight = null;
-                        coll[0].classList.remove("active");
-                        content[2].style.maxHeight = null;
-                        coll[2].classList.remove("active");
-                        content[3].style.maxHeight = null;
-                        coll[3].classList.remove("active");
-                    }
-                    content[1].style.maxHeight = content[1].scrollHeight + "px";
-                    coll[1].classList.add("active");
-                }
-            }); 
-            
-            coll[2].addEventListener("click", function() {
-                if (content[2].style.maxHeight) {
-                    content[2].style.maxHeight = null;
-                    coll[2].classList.remove("active");
-                } else {
-                    if (content[1].style.maxHeight || content[0].style.maxHeight || content[3].style.maxHeight) {
-                        content[1].style.maxHeight = null;
-                        coll[1].classList.remove("active");
-                        content[0].style.maxHeight = null;
-                        coll[0].classList.remove("active");
-                        content[3].style.maxHeight = null;
-                        coll[3].classList.remove("active");
-                    }
-                    content[2].style.maxHeight = content[2].scrollHeight + "px";
-                    coll[2].classList.add("active");
-                }
-            });
-
-            coll[3].addEventListener("click", function() {
-                if (content[3].style.maxHeight) {
-                    content[3].style.maxHeight = null;
-                    coll[3].classList.remove("active");
-                } else {
-                    if (content[1].style.maxHeight || content[2].style.maxHeight || content[0].style.maxHeight) {
-                        content[1].style.maxHeight = null;
-                        coll[1].classList.remove("active");
-                        content[2].style.maxHeight = null;
-                        coll[2].classList.remove("active");
-                        content[0].style.maxHeight = null;
-                        coll[0].classList.remove("active");
-                    }
-                    content[3].style.maxHeight = content[3].scrollHeight + "px";
-                    coll[3].classList.add("active");
-                }
-            });
-
-            var navmobilejs = document.getElementsByClassName("nav-burger");
-        var navmobilejscontent = document.getElementsByClassName("nav-mobile-nav");
-
-        navmobilejs[0].addEventListener("click", function() {
-                if (navmobilejscontent[0].style.maxHeight) {
-                    navmobilejscontent[0].style.maxHeight = null;
-                    navmobilejscontent[0].style.padding = "0px";
-                } else {
-                    navmobilejscontent[0].style.maxHeight = navmobilejscontent[0].scrollHeight + "px";
-                    navmobilejscontent[0].style.padding = "5px 10px 5px 10px";
-                }
-            });
-    </script>
 </body>
