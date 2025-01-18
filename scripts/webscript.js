@@ -1,11 +1,7 @@
-function sleepnav() {
+document.addEventListener("DOMContentLoaded", function(event){
     const dropdown = document.getElementsByClassName("dropdown-content");
     dropdown[0].style.animationPlayState = "running";
-}
-
-if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
-}
+});
 
 document.addEventListener("DOMContentLoaded", function(event){
     var navmobilejs = document.getElementsByClassName("nav-burger");
@@ -120,6 +116,13 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
     }
 });
+
+if (page === "GSTARTED" || page === "CONTACT") {
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+}
+
 
 
 
