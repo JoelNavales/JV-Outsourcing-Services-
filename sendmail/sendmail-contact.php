@@ -23,14 +23,14 @@ $message = htmlspecialchars($message);
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'ssl://smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.privateemail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'jvoutsouricingservices@gmail.com';                 // SMTP username
-$mail->Password = 'hswzhyyaftpaumwz';    // SMTP password              
-$mail->SMTPSecure = 'tls';          // Enable encryption, 'ssl' also accepted
-$mail->Port = 465;                   
+$mail->Username = 'admin@jvoutsourcingservices.com';                 // SMTP username
+$mail->Password = 'Nevergiveup27';    // SMTP password              
+$mail->SMTPSecure = 'TLS';          // Enable encryption, 'ssl' also accepted
+$mail->Port = 587;                   
 
-$mail->setFrom('jvoutsouricingservices@gmail.com', "Automatic Email Sender", false);
+$mail->setFrom('admin@jvoutsourcingservices.com', "Automatic Email Sender", false);
 $mail->FromName = $first_name . ' ' . $last_name;
 $mail->addAddress('jvoutsourcingservices@gmail.com');     // Add a recipient
 $mail->addReplyTo($email, $first_name . ' ' . $last_name);
