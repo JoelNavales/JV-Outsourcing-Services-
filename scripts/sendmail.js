@@ -20,6 +20,9 @@ $(document).ready(function() {
                           .fadeIn(1500);
                       }
                 });
+                setTimeout(function() {
+                    $(":submit", '#contactform').attr("enabled", "enabled");
+                }, 2500);
                 return false;
             }); 
         })
@@ -45,6 +48,9 @@ $(document).ready(function() {
                           .fadeIn(1500);
                       }
                 });
+                setTimeout(function() {
+                    $(":submit", '#contactform').attr("enabled", "enabled");
+                }, 2500);
                 return false;
             }); 
         })
